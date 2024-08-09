@@ -41,6 +41,9 @@ fn explore(request: Request) -> std::io::Result<()> {
 		(Method::Get, "/index.css") => {
 			form_response_statically(request, "index.css", "text/css; charset=utf-8", 200)
 		}
+		(Method::Get, "/hat.png") => {
+			form_response_dynamically(request, include_bytes!("../res/hat.png"), "image/png; charset=utf-8", 200)
+		}
 		(Method::Get, "/index.js") => {
 			form_response_statically(request, "index.js", "text/javascript; charset=utf-8", 200)
 		}

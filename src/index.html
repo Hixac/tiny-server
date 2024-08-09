@@ -1,12 +1,32 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="ru">
   <head>
 	<link rel="stylesheet" type="text/css" href="index.css"/>
   </head>
   <body>
-	<div>
-	  <label for="number_input">Type donate amount:</label>
-	  <span class="currency"><input placeholder="Enter donate amount" id="number_input" name="number_input" type="number"/>₽</span>
-	</div>
+	<header></header>
+	
+	<main>
+	  <div class="foreground">
+		<div class="support">
+		  <div class="donate-input">
+			<div class="just-input">
+			  <input id="money" type="number" required></input>	
+			  <label for="money">Скинь пёсью деньгу</label>
+			</div>
+			<div class="just-input">
+			  <input id="money" type="text" required></input>	
+			  <label for="money">Сообщение</label>
+			</div>
+		  </div>
+		</div>
+	  </div>	
+	  <div class="image-background">
+		<img src="hat.png" class="hat"></img>
+	  </div>  
+	</main>
+	
 	<script src="index.js"></script>
   </body>
 </html>
